@@ -7,26 +7,22 @@
 
     <div class="memo-folder pt-4 ms-2">
 
-      
-        
+      <div class="list-form">
+        <%# <%= form_with, id: "list-form" do |f| %>
+          <%# f.label :list, "ToDoリスト" %>
+          <%# f.text_field :list, class: "form-control", id: "list" %>
+          <%# f.submit "作成", class: "btn btn-primary", id: "list-submit" %>
+        <%# <% end %>
         <div class="folder-name d-flex justify-content-between">
           <%= link_to "#", class: "d-block pb-3 text-decoration-none" %>
           <%= link_to "#", class: "me-2" do %>
             <i class="bi bi-trash" style="font-size:20px"></i>
           <% end %>
         </div>
-        
-      
+      </div>
 
     </div>
 
-  </div>
-  <div class="list-form">
-    <%# <%= form_with, id: "list-form" do |f| %>
-      <%# f.label :list, "ToDoリスト" %>
-      <%# f.text_field :list, class: "form-control", id: "list" %>
-      <%# f.submit "作成", class: "btn btn-primary", id: "list-submit" %>
-    <%# <% end %>
   </div>
   <div class="sidebar-footer d-flex justify-content-between align-items-center">
 

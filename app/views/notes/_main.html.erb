@@ -14,47 +14,47 @@
             <h5 class="modal-title" id="exampleModalLabel">新規メモ</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <%# form_with, id: "form" do |f| %>
+          <%= form_with model: @note, id: "form" do |f| %>
             <div class="modal-body">
               <div class="form-group">
-                <%# f.label :title, "タイトル" %>
-                <%# f.text_field :title, class: "form-control", id: "title" %>
+                <%= f.label :title, "タイトル" %>
+                <%= f.text_field :title, class: "form-control", id: "title" %>
               </div>
               <div class="form-group">
-                <%# f.label :content, "テキスト" %>
-                <%# f.text_area :content, class: "form-control", id: "content" %>
+                <%= f.label :content, "テキスト" %>
+                <%= f.text_area :content, class: "form-control", id: "content" %>
               </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
-              <%# f.submit "作成する", class: "btn btn-primary", id: "submit" %>
+              <%= f.submit "作成する", class: "btn btn-primary", id: "submit" %>
             </div>
-          <%# end %>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
-  <div class="main-text memos d-flex flex-wrap justify-content-between aline-items-center overflow-scroll", id="list">
-    <%# <% @memos.each do |memo| %>
-      <div class="card mx-4 my-3" style="width: 20rem;">
+  <div class="main-text memos d-flex flex-wrap aline-items-center overflow-scroll", id="list">
+    <% @notes.each do |note| %>
+      <div class="card mx-4 my-3" style="width: 21rem;">
         <div class="card-body overflow-scroll" style="height: 300px">
           <h5 class="card-title shadow ms-2">
-            <%= "memo.title" %>
+            <%= note.title %>
           </h5>
           <div class="d-flex justify-content-between">
             <h6 class="pt-2">
-              <%= "memo.created_at" %>
+              <%= note.created_at %>
             </h6>
             <%= link_to "#" do %>
               <i class="bi bi-trash" style="font-size:20px"></i>
             <% end %>
           </div>
           <p class="card-text overflow-scroll">
-            <%= "memo.content" %>
+            <%= note.content %>
           </p>
         </div>
       </div>
-    <%# <% end %>
+    <% end %>
   </div>
 
 </div>

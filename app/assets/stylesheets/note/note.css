@@ -23,15 +23,6 @@
   }
 
 
-  /* .list-header {
-    height: 50px;
-  }
-
-  .list {
-    height: calc(100vh - 50px);
-  } */
-
-
   .main-header {
     height: 50px;
   }
@@ -39,12 +30,8 @@
   .main-text {
     height: calc(100vh - 50px) !important;
   }
-  
-  /* .form-control {
-    height: calc(100vh - 50px) !important;
-  } */
 
-  
+
   .error-message {
     list-style: none;
     color: red;

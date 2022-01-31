@@ -34,11 +34,11 @@
       </div>
     </div>
   </div>
-  <div class="main-text d-flex flex-wrap aline-items-center overflow-scroll", id="list">
+  <div class="main-text d-flex flex-wrap overflow-scroll", id="list">
     <% @notes.each do |note| %>
-      <div class="card mx-1 my-1" style="width: 22rem;">
+      <div class="card m-3" style="width: 20rem;">
         <div class="card-body overflow-scroll" style="height: 300px">
-          <h5 class="card-title shadow ms-2">
+          <h5 class="card-title shadow ms-2" style="font-size:23px">
             <%= note.title %>
           </h5>
           <div class="d-flex justify-content-between">

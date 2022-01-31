@@ -10,6 +10,7 @@ require("channels")
 require('jquery')
 require("../post")
 require("../create")
+require("../list")
 import "bootstrap"
 import "../stylesheets/application"
 

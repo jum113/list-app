@@ -24,8 +24,8 @@ function list(){
         return null;
       };
       const list = document.getElementById("list-text");
-      list.insertAdjacentHTML("afterbegin", buildHTML(XHR));
-      window.refresh();
+      list.insertAdjacentHTML("beforeend", buildHTML(XHR));
+      location.reload();
     };
   });
 };

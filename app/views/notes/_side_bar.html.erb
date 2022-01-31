@@ -3,27 +3,40 @@
   <div class="sidebar-header shadow d-flex align-items-center">
     <i class="bi bi-journal-text mx-2" style="font-size:24px">ListApp</i>
   </div>
-  <div class="memos-folder overflow-scroll">
 
-    <div class="memo-folder pt-4 ms-2">
+  <div class="lists-form pt-4 mx-2">
 
-      <div class="list-form">
-        <%# <%= form_with, id: "list-form" do |f| %>
-          <%# f.label :list, "ToDoリスト" %>
-          <%# f.text_field :list, class: "form-control", id: "list" %>
-          <%# f.submit "作成", class: "btn btn-primary", id: "list-submit" %>
-        <%# <% end %>
-        <div class="folder-name d-flex justify-content-between">
-          <%= link_to "#", class: "d-block pb-3 text-decoration-none" %>
+    <div class="list-form">
+      <%= form_with model: @list, id: "list-form" do |f| %>
+        <div>
+          <%= f.label :list_text, "ToDoリスト" %>
+        </div>
+        <div>
+          <%= f.text_field :list_text, class: "text-field", id: "text" %>
+          <%= f.submit "作成", class: "btn btn-primary", id: "list-submit" %>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+  <div class="lists overflow-scroll mx-2">
+
+    <div class="lists-text", id="list-text">
+      <% @lists.each do |list| %>
+        <div class="list-text d-flex justify-content-between p-2 my-1">
+          <label>
+            <input type="checkbox">
+            <%= list.list_text %>
+          </label>
           <%= link_to "#", class: "me-2" do %>
             <i class="bi bi-trash" style="font-size:20px"></i>
           <% end %>
         </div>
-      </div>
-
+      <% end %>
     </div>
 
   </div>
+
   <div class="sidebar-footer d-flex justify-content-between align-items-center">
 
     <%= link_to destroy_user_session_path, method: :delete do %>

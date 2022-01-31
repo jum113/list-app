@@ -17,6 +17,13 @@ class NotesController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    @notes = Note.search(params[:keyword])
+    @note = Note.new
+    @list = List.new
+    @lists = List.order(id: "ASC")
+  end
+
   private
 
   def note_params

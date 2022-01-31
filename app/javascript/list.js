@@ -1,10 +1,12 @@
 const buildHTML = (XHR) => {
   const item = XHR.response.post;
   const html = `
-    <div class="list-text">
+  <div class="list-text d-flex justify-content-between p-2 my-1">
+    <label>
       <input type="checkbox">
-      <label>${ item.list_text }</label>
-    </div>`;
+      ${ item.list_text }
+    </label>
+  </div>`;
   return html;
 };
 

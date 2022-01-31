@@ -41,7 +41,51 @@
   }
 
 
+  .bi-trash {
+    color: red;
+  }
+
+
   .error-message {
     list-style: none;
     color: red;
   }
+
+@media (max-width: 1433px) {
+  .text-field {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1113px) {
+  .text-field {
+    width: 150px;
+  }
+}
+
+@media (max-width: 913px) {
+  .text-field {
+    width: 110px;
+  }
+}
+
+@media (max-width: 753px) {
+  .text-field {
+    width: 60px;
+  }
+}
+
+@media (max-width: 553px) {
+  .text-field {
+    width: 40px;
+  }
+}
+
+@media (max-width: 473px) {
+  .text-field {
+    width: 25px;
+  }
+  .list-text {
+    font-size: 12px;
+  }
+}

@@ -12,7 +12,7 @@
           <%= f.label :list_text, "ToDoリスト" %>
         </div>
         <div>
-          <%= f.text_field :list_text, class: "text-field", id: "text" %>
+          <%= f.text_field :list_text, class: "text-field", id: "text", autofocus: true %>
           <%= f.submit "作成", class: "btn btn-primary", id: "list-submit" %>
         </div>
       <% end %>
@@ -28,7 +28,7 @@
             <input type="checkbox">
             <%= list.list_text %>
           </label>
-          <%= link_to "#", class: "me-2" do %>
+          <%= link_to list_path(list), method: :delete, class: "me-2" do %>
             <i class="bi bi-trash" style="font-size:20px"></i>
           <% end %>
         </div>
@@ -42,8 +42,8 @@
     <%= link_to destroy_user_session_path, method: :delete do %>
       <i class="bi bi-door-closed ms-2" style="font-size:20px"></i>
     <% end %>
-    <button type="button" class="btn btn-primary ms-3" id="folder-btn">
-      <i class="bi bi-plus-circle me-1"></i>
+    <button type="button" class="btn btn-secondary ms-3" id="folder-btn">
+      <i class="bi bi-person-circle"></i>
     </button>
 
   </div>

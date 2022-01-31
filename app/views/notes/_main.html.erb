@@ -45,7 +45,7 @@
             <h6 class="pt-2">
               <%= note.created_at %>
             </h6>
-            <%= link_to "#" do %>
+            <%= link_to note_path(note), method: :delete do %>
               <i class="bi bi-trash" style="font-size:20px"></i>
             <% end %>
           </div>

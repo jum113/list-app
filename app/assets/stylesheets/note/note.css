@@ -41,6 +41,11 @@
   }
 
 
+  .bi-trash {
+    color: red;
+  }
+
+
   .error-message {
     list-style: none;
     color: red;

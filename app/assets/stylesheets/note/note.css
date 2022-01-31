@@ -8,6 +8,7 @@
 
   .lists-form {
     height: 100px;
+    background-color: yellow;
   }
   .text-field {
     width: 280px;
@@ -15,14 +16,17 @@
 
   .lists {
     height: calc(100vh - 200px);
+    background-color: yellow;
   }
   .list-text {
     border: solid 1px #C0C0C0;
     border-radius: 5px;
+    background-color: lightskyblue;
   }
 
   .sidebar-footer {
     height: 50px;
+    background-color: yellow;
   }
 
 
@@ -30,10 +34,15 @@
 
   .main-header {
     height: 50px;
+    background-color: yellow;
   }
 
   .main-text {
     height: calc(100vh - 50px) !important;
+    background-color: yellow;
+  }
+  .card-body {
+    background-color: lightyellow;
   }
   .card-text {
     word-spacing: 250px;

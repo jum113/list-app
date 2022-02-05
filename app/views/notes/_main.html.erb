@@ -34,7 +34,7 @@
       </div>
     </div>
     <%= form_with url: search_notes_path, method: :get, class: "search-form ms-3", local: true do |form| %>
-      <%= form.text_field :keyword, placeholder: "タイトルを検索する", class: "search-input" %>
+      <%= form.text_field :keyword, placeholder: "タイトルを検索", class: "search-input" %>
       <%= form.submit "検索", class: "search-btn px-1" %>
     <% end %>
   </div>

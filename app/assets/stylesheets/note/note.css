@@ -61,7 +61,7 @@
 
 
   .error-message {
-    list-style: none;
+    list-style: disc;
     color: red;
   }
 
@@ -81,25 +81,43 @@
   .text-field {
     width: 110px;
   }
+  
+  .card {
+    width: 230px !important;
+  }
 }
 
 @media (max-width: 753px) {
   .text-field {
-    width: 60px;
+    display: block;
+    width: 130px;
+  }
+  .lists-form {
+    height: 120px;
+  }
+  .lists {
+    height: calc(100vh - 220px);
   }
 }
 
 @media (max-width: 553px) {
   .text-field {
-    width: 40px;
+    width: 110px;
   }
 }
 
 @media (max-width: 473px) {
   .text-field {
-    width: 25px;
+    width: 80px;
   }
   .list-text {
     font-size: 12px;
+  }
+  .list-label {
+    font-size: 13px;
+  }
+  
+  .search-input {
+    width: 140px;
   }
 }

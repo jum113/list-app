@@ -7,4 +7,5 @@ Rails.application.routes.draw do
     end
   end
   resources :lists, only: [:create, :destroy]
+  resources :users, only: [:edit, :update]
 end

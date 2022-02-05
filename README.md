@@ -76,3 +76,4 @@ https://docs.google.com/spreadsheets/d/1dhrOOms_4Rw4cDQEhmtyEC_O0-WoxsUoUlGAt4ml
 # 工夫したポイント
 - javascriptを用いて非同期通信で保存処理を行ったこと。
 - ユーザー管理機能以外は1ページで作成し、ページ遷移無しで実装していること。
+- アプリをレスポンシブ化していること。

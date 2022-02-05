@@ -8,6 +8,8 @@ list-app
 https://list-app-37254.herokuapp.com/
 
 # テスト用アカウント
+- Basic認証ID : admin
+- Basic認証パスワード : 2222
 - メールアドレス : test@test
 - パスワード : test123
 
@@ -51,7 +53,7 @@ https://docs.google.com/spreadsheets/d/1dhrOOms_4Rw4cDQEhmtyEC_O0-WoxsUoUlGAt4ml
 
 # 実装予定の機能
 現在、ユーザー編集機能を実装中。
-今後はフォント装飾機能やタグ付け機能を実装予定。
+今後はメモ詳細表示機能やフォント装飾機能を実装予定。
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/8d1a177a80aa62ca8fa68a8ec94a0684.png)](https://gyazo.com/8d1a177a80aa62ca8fa68a8ec94a0684)
@@ -74,6 +76,6 @@ https://docs.google.com/spreadsheets/d/1dhrOOms_4Rw4cDQEhmtyEC_O0-WoxsUoUlGAt4ml
 % yarn install
 
 # 工夫したポイント
-- javascriptを用いて非同期通信で保存処理を行ったこと。
+- javascriptを用いて非同期通信で保存処理を行っていること。
 - ユーザー管理機能以外は1ページで作成し、ページ遷移無しで実装していること。
 - アプリをレスポンシブ化していること。

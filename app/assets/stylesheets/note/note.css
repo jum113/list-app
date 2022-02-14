@@ -45,6 +45,9 @@
   .card-body {
     background-color: lightyellow;
   }
+  .card-date {
+    font-style: italic;
+  }
   .card-text {
     word-spacing: 250px;
     text-indent: 10px;

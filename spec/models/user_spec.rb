@@ -55,24 +55,24 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
       end
-      it 'passwordが数字のみでは登録できない' do
-        @user.password = '123456'
-        @user.password_confirmation = '123456'
-        @user.valid?
-        expect(@user.errors.full_messages).to include('Password には英字と数字の両方を含めて設定してください')
-      end
-      it 'passwordが英字のみでは登録できない' do
-        @user.password = 'abcdef'
-        @user.password_confirmation = 'abcdef'
-        @user.valid?
-        expect(@user.errors.full_messages).to include('Password には英字と数字の両方を含めて設定してください')
-      end
-      it 'passwordに全角文字が含まれている場合登録できない' do
-        @user.password = 'abc12あ'
-        @user.password_confirmation = 'abc12あ'
-        @user.valid?
-        expect(@user.errors.full_messages).to include('Password には英字と数字の両方を含めて設定してください')
-      end
+      # it 'passwordが数字のみでは登録できない' do
+      #   @user.password = '123456'
+      #   @user.password_confirmation = '123456'
+      #   @user.valid?
+      #   expect(@user.errors.full_messages).to include('Password には英字と数字の両方を含めて設定してください')
+      # end
+      # it 'passwordが英字のみでは登録できない' do
+      #   @user.password = 'abcdef'
+      #   @user.password_confirmation = 'abcdef'
+      #   @user.valid?
+      #   expect(@user.errors.full_messages).to include('Password には英字と数字の両方を含めて設定してください')
+      # end
+      # it 'passwordに全角文字が含まれている場合登録できない' do
+      #   @user.password = 'abc12あ'
+      #   @user.password_confirmation = 'abc12あ'
+      #   @user.valid?
+      #   expect(@user.errors.full_messages).to include('Password には英字と数字の両方を含めて設定してください')
+      # end
     end
   end
 end
